@@ -89,14 +89,21 @@ body {
 
 
 .button-primary {
-	color:black;
+	color: black;
 	font-family: @primary-font;
+	background:#A9A9A9;
 	.button-design();
 }
 .button-secondary {
 	color: white;
-	background: #bbb;
+	background: #708090
+
+	;
 	.button-design();
+}
+li {
+	font-family: @secondary-font;
+	font-size: 1.6rem;
 }
 
 h1 {
@@ -105,12 +112,12 @@ h1 {
 }
 
 h2 {
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 	font-family: @primary-font;
 }
 
 h3 {
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	font-family: @primary-font;
 }
 h4 {
@@ -167,7 +174,8 @@ nav {
 	}
 	.intro {
 		text-align: center;
-		color: white;
+
+		
 		border-bottom: 2px solid white;
 		padding-bottom: 2%;
 		
@@ -185,8 +193,7 @@ nav {
 			justify-content: center;
 			flex-flow: row wrap;
 			width: 100%;
-			padding: 0 20%;
-			
+
 			button {
 				// width: 30%;
 				margin: 0 10px;
@@ -194,6 +201,61 @@ nav {
 			@media (max-width: 620px) {
 				// width: 
 			}
+		}
+	}
+}
+
+.skills-work {
+	padding: 30px 0px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	.half-section{
+		width: 48%;
+		padding-bottom: 30px;
+
+		@media (max-width: 760px) {
+			width: 100%;
+		}
+
+		h2 {
+			padding-bottom: 5px;
+
+		}
+		
+		.skills-container {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-evenly;
+			width: 100%;
+			
+			.skills-box {
+				background: #2F4F4F;
+				color: #ddd;
+				border: 2px solid #101010;
+				border-radius: 3px;
+				margin-bottom: 10px;
+				padding: 20px 30px;
+				font-family: @primary-font;
+			}
+		}
+	}
+}
+
+.work-history-section {
+	display: flex;
+	flex-flow: column wrap;
+
+	.work-box {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		.work-years {
+			// width: 50%;
+		}
+		.work-company {
+			// width: 50%;
 		}
 	}
 }

@@ -165,6 +165,7 @@ body {
 }
 .button-primary {
   color: black;
+  background: #A9A9A9;
   font-family: 'Josefin Sans', sans-serif;
   padding: 20px;
   border-radius: 5px;
@@ -173,23 +174,27 @@ body {
 }
 .button-secondary {
   color: white;
-  background: #bbb;
+  background: #708090;
   font-family: 'Josefin Sans', sans-serif;
   padding: 20px;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
 }
+li {
+  font-family: 'Teko', sans-serif;
+  font-size: 1.6rem;
+}
 h1 {
   font-size: 3.2rem;
   font-family: 'Josefin Sans', sans-serif;
 }
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-family: 'Josefin Sans', sans-serif;
 }
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-family: 'Josefin Sans', sans-serif;
 }
 h4 {
@@ -242,7 +247,6 @@ nav a {
 }
 .main-content .intro {
   text-align: center;
-  color: white;
   border-bottom: 2px solid white;
   padding-bottom: 2%;
 }
@@ -258,10 +262,52 @@ nav a {
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
-  padding: 0 20%;
 }
 .main-content .intro .button-container button {
   margin: 0 10px;
 }
 @media (max-width: 620px) {
+}
+.skills-work {
+  padding: 30px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.skills-work .half-section {
+  width: 48%;
+  padding-bottom: 30px;
+}
+@media (max-width: 760px) {
+  .skills-work .half-section {
+    width: 100%;
+  }
+}
+.skills-work .half-section h2 {
+  padding-bottom: 5px;
+}
+.skills-work .half-section .skills-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.skills-work .half-section .skills-container .skills-box {
+  background: #2F4F4F;
+  color: #ddd;
+  border: 2px solid #101010;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 20px 30px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.work-history-section {
+  display: flex;
+  flex-flow: column wrap;
+}
+.work-history-section .work-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
