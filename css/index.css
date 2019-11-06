@@ -234,6 +234,9 @@ nav a {
   font-family: 'Teko', sans-serif;
   font-size: 22px;
 }
+nav a:hover {
+  color: black;
+}
 .main-content {
   padding: 2% 0px;
 }
@@ -247,7 +250,7 @@ nav a {
 }
 .main-content .intro {
   text-align: center;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #101010;
   padding-bottom: 2%;
 }
 .main-content .intro .introIcon {
@@ -273,6 +276,7 @@ nav a {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  border-bottom: 2px solid #101010;
 }
 .skills-work .half-section {
   width: 48%;
@@ -310,4 +314,41 @@ nav a {
   flex-flow: row wrap;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+.contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
+}
+.contact .contact-header {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.contact .contact-box {
+  width: 30%;
+  text-align: center;
+  background: #ffffffd9;
+  border: 1px black solid;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+}
+@media (max-width: 760px) {
+  .contact .contact-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.contact .contact-box .contact-icon {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 32px;
+}
+.contact .contact-box:hover {
+  cursor: pointer;
+  color: white;
+  background: #ccc;
 }

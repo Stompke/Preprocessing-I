@@ -86,6 +86,7 @@ body {
 @secondary-color: #E9967A;
 @primary-font:  'Josefin Sans', sans-serif;
 @secondary-font: 'Teko', sans-serif;
+@small-window: 760px;
 
 
 .button-primary {
@@ -156,6 +157,10 @@ nav {
 		text-decoration: none;
 		font-family: @secondary-font;
 		font-size: 22px;
+
+	}
+	a:hover {
+		color: black;
 	}
 
 }
@@ -176,7 +181,7 @@ nav {
 		text-align: center;
 
 		
-		border-bottom: 2px solid white;
+		border-bottom: 2px solid #101010;
 		padding-bottom: 2%;
 		
 		
@@ -210,11 +215,12 @@ nav {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
+	border-bottom: 2px solid #101010;
 	.half-section{
 		width: 48%;
 		padding-bottom: 30px;
 
-		@media (max-width: 760px) {
+		@media (max-width: @small-window) {
 			width: 100%;
 		}
 
@@ -257,5 +263,44 @@ nav {
 		.work-company {
 			// width: 50%;
 		}
+	}
+}
+
+.contact {
+	.contact-header {
+		width: 100%;
+		text-align: center;
+		padding: 30px 0;
+	}
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+	padding: 30px 0;
+	.contact-box {
+		width: 30%;
+		text-align: center;
+		background: #ffffffd9;
+		border: 1px black solid;
+		padding: 20px;
+		color: black;
+		text-decoration: none;
+
+		@media (max-width: @small-window) {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+		.contact-icon {
+			padding: 20px 0;
+			text-align: center;
+			font-size: 32px;
+		}
+		
+	}
+	.contact-box:hover {
+		cursor: pointer;
+		color: white;
+		background: #ccc;
 	}
 }
