@@ -137,3 +137,31 @@ body {
 body {
   background: grey;
 }
+/*** SHAWN TOMPKE'S CODE STARTS */
+.center-content {
+  justify-content: center;
+  display: flex;
+}
+header {
+  background: white;
+  padding: 10px 0px;
+  justify-content: center;
+  display: flex;
+}
+.logo {
+  width: 20%;
+  font-size: 32px;
+  color: #CD5C5C;
+  justify-content: center;
+  display: flex;
+}
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a {
+  color: #CD5C5C;
+  text-decoration: none;
+}
