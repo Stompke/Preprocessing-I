@@ -266,6 +266,10 @@ nav a:hover {
   flex-flow: row wrap;
   width: 100%;
 }
+.main-content .intro .button-container a {
+  color: black;
+  text-decoration: none;
+}
 .main-content .intro .button-container button {
   margin: 0 10px;
 }
@@ -315,19 +319,19 @@ nav a:hover {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.contact {
+#contact {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
   padding: 30px 0;
 }
-.contact .contact-header {
+#contact .contact-header {
   width: 100%;
   text-align: center;
   padding: 30px 0;
 }
-.contact .contact-box {
+#contact .contact-box {
   width: 30%;
   text-align: center;
   background: #ffffffd9;
@@ -337,17 +341,17 @@ nav a:hover {
   text-decoration: none;
 }
 @media (max-width: 760px) {
-  .contact .contact-box {
+  #contact .contact-box {
     width: 100%;
     margin-bottom: 10px;
   }
 }
-.contact .contact-box .contact-icon {
+#contact .contact-box .contact-icon {
   padding: 20px 0;
   text-align: center;
   font-size: 32px;
 }
-.contact .contact-box:hover {
+#contact .contact-box:hover {
   cursor: pointer;
   color: white;
   background: #ccc;
