@@ -1,1 +1,358 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: grey;
+}
+/***         SHAWN TOMPKE'S CODE STARTS            ***/
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Teko Regular'), local('Teko-Regular'), url(https://fonts.gstatic.com/s/teko/v9/LYjNdG7kmE0gfaN9oA.ttf) format('truetype');
+}
+.center-content {
+  justify-content: center;
+  display: flex;
+}
+.button-design {
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.button-primary {
+  color: black;
+  background: #A9A9A9;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.button-secondary {
+  color: white;
+  background: #708090;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+li {
+  font-family: 'Teko', sans-serif;
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 3.2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+h2 {
+  font-size: 1.7rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+h3 {
+  font-size: 1.4rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+h4 {
+  font-size: 1.6rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+p {
+  font-size: 1.4rem;
+  font-family: 'Teko', sans-serif;
+}
+.pageContainer {
+  padding: 0px 4%;
+  background-image: linear-gradient(to bottom right, #ccc, #2b2b2b);
+}
+header {
+  background: white;
+  padding: 10px 0px;
+  justify-content: center;
+  display: flex;
+}
+.logo {
+  width: 20%;
+  font-size: 32px;
+  color: #CD5C5C;
+  justify-content: center;
+  display: flex;
+}
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a {
+  color: #CD5C5C;
+  text-decoration: none;
+  font-family: 'Teko', sans-serif;
+  font-size: 22px;
+}
+nav a:hover {
+  color: black;
+}
+.main-content {
+  padding: 2% 0px;
+}
+.main-content .headerImage {
+  justify-content: center;
+  display: flex;
+  padding: 30px 0px;
+}
+.main-content .headerImage img {
+  width: 20%;
+}
+.main-content .intro {
+  text-align: center;
+  border-bottom: 2px solid #101010;
+  padding-bottom: 2%;
+}
+.main-content .intro .introIcon {
+  font-size: 3.2rem;
+  padding: 20px 0px;
+}
+.main-content .intro p {
+  padding: 20px;
+}
+.main-content .intro .button-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.main-content .intro .button-container a {
+  color: black;
+  text-decoration: none;
+}
+.main-content .intro .button-container button {
+  margin: 0 10px;
+}
+@media (max-width: 620px) {
+}
+.skills-work {
+  padding: 30px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid #101010;
+}
+.skills-work .half-section {
+  width: 48%;
+  padding-bottom: 30px;
+}
+@media (max-width: 760px) {
+  .skills-work .half-section {
+    width: 100%;
+  }
+}
+.skills-work .half-section h2 {
+  padding-bottom: 5px;
+}
+.skills-work .half-section .skills-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.skills-work .half-section .skills-container .skills-box {
+  background: #2F4F4F;
+  color: #ddd;
+  border: 2px solid #101010;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 20px 30px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.work-history-section {
+  display: flex;
+  flex-flow: column wrap;
+}
+.work-history-section .work-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
+}
+#contact .contact-header {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+#contact .contact-box {
+  width: 30%;
+  text-align: center;
+  background: #ffffffd9;
+  border: 1px black solid;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+}
+@media (max-width: 760px) {
+  #contact .contact-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+#contact .contact-box .contact-icon {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 32px;
+}
+#contact .contact-box:hover {
+  cursor: pointer;
+  color: white;
+  background: #ccc;
+}

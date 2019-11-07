@@ -57,3 +57,257 @@ html, body {
     height: 100%;
 }
 
+body {
+	background: grey;
+	
+}
+
+
+	   /***         SHAWN TOMPKE'S CODE STARTS            ***///
+	   
+//fonts 
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Teko&display=swap');
+
+// Mixins
+.center-content {
+	justify-content: center;
+	display: flex;
+} 
+.button-design {
+	font-family: @primary-font;
+	padding: 20px;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+// Vairables 
+@primary-color: #CD5C5C;
+@secondary-color: #E9967A;
+@primary-font:  'Josefin Sans', sans-serif;
+@secondary-font: 'Teko', sans-serif;
+@small-window: 760px;
+
+
+.button-primary {
+	color: black;
+	font-family: @primary-font;
+	background:#A9A9A9;
+	.button-design();
+}
+.button-secondary {
+	color: white;
+	background: #708090
+
+	;
+	.button-design();
+}
+li {
+	font-family: @secondary-font;
+	font-size: 1.6rem;
+}
+
+h1 {
+	font-size: 3.2rem;
+	font-family: @primary-font;
+}
+
+h2 {
+	font-size: 1.7rem;
+	font-family: @primary-font;
+}
+
+h3 {
+	font-size: 1.4rem;
+	font-family: @primary-font;
+}
+h4 {
+	font-size: 1.6rem;
+	font-family: @primary-font;
+}
+p {
+	font-size:  1.4rem;
+	font-family: @secondary-font;
+}
+
+.pageContainer {
+	padding: 0px 4%;
+	background-image: linear-gradient(to bottom right, #ccc, #2b2b2b);
+}
+
+header {
+	background: white;
+	padding: 10px 0px;
+	.center-content();
+}
+.logo {
+	width: 20%;
+	font-size: 32px;
+	color: @primary-color;
+	.center-content();
+}
+nav {
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	a {
+		color: @primary-color;
+		text-decoration: none;
+		font-family: @secondary-font;
+		font-size: 22px;
+
+	}
+	a:hover {
+		color: black;
+	}
+
+}
+
+.main-content {
+	
+	padding: 2% 0px;	
+	
+	
+	.headerImage {
+		.center-content();
+		padding: 30px 0px;
+		img {
+			width: 20%;
+		}
+	}
+	.intro {
+		text-align: center;
+
+		
+		border-bottom: 2px solid #101010;
+		padding-bottom: 2%;
+		
+		
+
+		.introIcon {
+			font-size: 3.2rem;
+			padding: 20px 0px;
+		}
+		p {
+			padding: 20px;
+		}
+		.button-container {
+			display: flex;
+			justify-content: center;
+			flex-flow: row wrap;
+			width: 100%;
+			
+			a {
+				color: black;
+				text-decoration: none;
+
+			}
+			
+			button {
+				// width: 30%;
+				margin: 0 10px;
+				
+			}
+			@media (max-width: 620px) {
+				// width: 
+			}
+		}
+	}
+}
+
+.skills-work {
+	padding: 30px 0px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	border-bottom: 2px solid #101010;
+	.half-section{
+		width: 48%;
+		padding-bottom: 30px;
+
+		@media (max-width: @small-window) {
+			width: 100%;
+		}
+
+		h2 {
+			padding-bottom: 5px;
+
+		}
+		
+		.skills-container {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-evenly;
+			width: 100%;
+			
+			.skills-box {
+				background: #2F4F4F;
+				color: #ddd;
+				border: 2px solid #101010;
+				border-radius: 3px;
+				margin-bottom: 10px;
+				padding: 20px 30px;
+				font-family: @primary-font;
+			}
+		}
+	}
+}
+
+.work-history-section {
+	display: flex;
+	flex-flow: column wrap;
+
+	.work-box {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		.work-years {
+			// width: 50%;
+		}
+		.work-company {
+			// width: 50%;
+		}
+	}
+}
+
+#contact {
+	.contact-header {
+		width: 100%;
+		text-align: center;
+		padding: 30px 0;
+	}
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+	padding: 30px 0;
+	.contact-box {
+		width: 30%;
+		text-align: center;
+		background: #ffffffd9;
+		border: 1px black solid;
+		padding: 20px;
+		color: black;
+		text-decoration: none;
+
+		@media (max-width: @small-window) {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+		.contact-icon {
+			padding: 20px 0;
+			text-align: center;
+			font-size: 32px;
+		}
+		
+	}
+	.contact-box:hover {
+		cursor: pointer;
+		color: white;
+		background: #ccc;
+	}
+}
